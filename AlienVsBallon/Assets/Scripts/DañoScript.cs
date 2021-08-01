@@ -19,6 +19,7 @@ public class DañoScript : MonoBehaviour
 
         void Muere()
         {
+            Scorescript.scoreValue += 1;
             Instantiate(desaparecer, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

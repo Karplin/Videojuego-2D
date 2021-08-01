@@ -20,7 +20,7 @@ public class globo : MonoBehaviour
 
         spriteRenderer.sprite = ballonSprites[Random.Range(0, 10)];
 
-        transform.position = new Vector3(Random.Range(-5f, -14.7f),transform.position.y, transform.position.z);
+        transform.position = new Vector3(Random.Range(-1.41f, -13.86f),transform.position.y, transform.position.z);
 
         force = new Vector3(Random.Range(-100, 100), Random.Range(150, 250), 0);
         rb.AddForce(force);

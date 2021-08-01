@@ -9,6 +9,8 @@ public class GloboSpawner : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Spawn", 0.0f, .6f);
+
+        TimerController.instance.BeginTimer();
     }
 
     // Update is called once per frame
