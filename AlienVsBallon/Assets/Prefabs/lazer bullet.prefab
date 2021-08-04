@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3036835891142794196}
   - component: {fileID: 8401040096178017905}
   - component: {fileID: 4665937260793354874}
+  - component: {fileID: 1163838755567518291}
   m_Layer: 0
   m_Name: lazer bullet
   m_TagString: Untagged
@@ -137,3 +138,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 3036835891142794196}
+  "da\xF1o": 2
+--- !u!114 &1163838755567518291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260164479452887318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b261bd6a000c03749aecb3bfea598a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  rb: {fileID: 3036835891142794196}
+  "da\xF1o": 2

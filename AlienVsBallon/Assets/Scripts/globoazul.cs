@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class globo : MonoBehaviour
+public class globoazul : MonoBehaviour
 {
 
     [SerializeField] Vector3 force;
-    
+
     [SerializeField] Sprite[] ballonSprites;
 
     private Rigidbody2D rb;
@@ -18,9 +18,9 @@ public class globo : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        spriteRenderer.sprite = ballonSprites[Random.Range(0, 9)];
+        spriteRenderer.sprite = ballonSprites[Random.Range(0, 1)];
 
-        transform.position = new Vector3(Random.Range(-1.41f, -13.86f),transform.position.y, transform.position.z);
+        transform.position = new Vector3(Random.Range(-1.41f, -13.86f), transform.position.y, transform.position.z);
 
         force = new Vector3(Random.Range(-100, 100), Random.Range(150, 250), 0);
         rb.AddForce(force);
@@ -29,7 +29,7 @@ public class globo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,8 +37,6 @@ public class globo : MonoBehaviour
         if (collision.gameObject.tag == "TopWall")
         {
             Destroy(this.gameObject);
-
-        }   
+        }
     }
-
 }

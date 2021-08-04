@@ -18,5 +18,12 @@ public class Scorescript : MonoBehaviour
     void Update()
     {
         score.text = "Helio: " + scoreValue;
+
+     
     }
+
+
+
+
+
 }

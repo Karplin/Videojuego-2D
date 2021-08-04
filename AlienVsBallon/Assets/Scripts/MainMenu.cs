@@ -24,6 +24,6 @@ public class MainMenu : MonoBehaviour
 
     public void Salir()
     {
-        Application.Quit();
+            Application.Quit();
     }
 }
