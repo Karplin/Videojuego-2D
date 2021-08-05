@@ -9,7 +9,8 @@ public class bulletfly : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
     public int daño = 2;
-    
+
+
     void Start()
     {
         rb.velocity = transform.right * speed;
