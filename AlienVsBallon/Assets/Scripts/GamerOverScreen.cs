@@ -25,7 +25,7 @@ public class GamerOverScreen : MonoBehaviour
     public void ExitButton()
     {
 
-        SceneManager.LoadScene("Mainmenu");
+        SceneManager.LoadScene("Intro");
         Scorescript.scoreValue = 5;
 
     }
