@@ -16,7 +16,15 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+    }
 
+
+    public void Restart()
+    {
+        pauseMenu.SetActive(false);
+        SceneManager.LoadScene("Gameplay");
+        Scorescript.scoreValue = 5;
+        Time.timeScale = 1f;
     }
 
     public void Home(int SceneID)
